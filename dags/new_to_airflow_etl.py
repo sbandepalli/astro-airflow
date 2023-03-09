@@ -5,7 +5,7 @@ from airflow import DAG
 from airflow.providers.amazon.aws.transfers.local_to_s3 import LocalFilesystemToS3Operator
 from airflow.operators.dummy_operator import DummyOperator
 from airflow.operators.python_operator import PythonOperator
-from include.files import etl_functions
+#from include.files import etl_functions #not being used
 from datetime import datetime
 from tabulate import tabulate
 from airflow.providers.snowflake.operators.snowflake import SnowflakeOperator
