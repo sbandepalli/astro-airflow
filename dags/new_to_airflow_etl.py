@@ -99,7 +99,7 @@ with DAG(
     task_load_users = PythonOperator(
         task_id='load_users',
         python_callable=load_users,
-        op_kwargs={'path': '/usr/local/airflow/data/users.csv'}
+        op_kwargs={'path': '/usr/local/airflow/users.csv'}
     )
 
     #Task 4 - Load local CSV file to S3 bucket
