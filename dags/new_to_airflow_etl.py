@@ -105,7 +105,7 @@ with DAG(
     #Task 4 - Load local CSV file to S3 bucket
     create_local_to_s3_job = LocalFilesystemToS3Operator(
         task_id="create_local_to_s3_job",
-        filename="/usr/local/airflow/data/users.csv",
+        filename="/usr/local/airflow/users.csv",
         dest_key=S3_KEY,
         dest_bucket=S3_BUCKET,
         replace=True,
